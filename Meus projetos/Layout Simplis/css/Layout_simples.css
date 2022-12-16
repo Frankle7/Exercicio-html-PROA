@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    }
+
+#cabecalho {
+    width: 98%;
+    height: 70px; /*altura*/
+    background-color: orange; /*cor do fundo*/
+    margin: auto; /*centralizar a div*/
+    }
+
+#text-header{
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+
+#menu {
+    height: 600px;
+    width: 20%;
+    background-color: greenyellow;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  
+}
+
+#principal {
+    height: 600px;
+    width: 57%;
+    background-color: lightgray;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    
+   
+}
+
+#lado_direito{
+    width: 20%;
+    height: 600px;
+    background-color: rgb(125, 126, 224);
+    float: left; /*encaixe á esquerda "alinhar proxima section na mesma linha*/
+    margin-top: 10px;
+    
+
+}
+
+#rodape {
+    height: 100px;
+    background-color: pink;
+    width: 98,5%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    clear: left; /*tirar a flutuação de ambos os lado*/
+}

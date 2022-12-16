@@ -1,0 +1,62 @@
+
+
+  #navMenu {
+    position: relative;
+    top: 25px;
+    left: 76%;
+    font-size:20px; /*diz que a fonte tem 20 pixels de altura, mas apenas a fonte das listas e não o cabeçalho, ele sabe a diferença por causa do id que demos à lista*/
+ }
+
+  #navMenu ul { /*isso diz à lista dentro das tags <div> o que fazer*/
+    padding:0; /*dizer ao menu para estar ao lado da borda da página*/
+    line-height:30px; /*diz quanto espaço deve haver entre a parte inferior de uma linha de texto e a parte superior da próxima linha de texto*/
+ }
+ .img-proff{
+  position: relative;
+  bottom: 5px;
+  right: 7px;
+ }
+  #navMenu li { /*isso está falando com cada item individual na lista*/
+    list-style:none; /*diz a lista para remover os pontos ao lado de cada item*/
+    float:left; /*diz que os itens da lista estão lado a lado*/
+    position:relative; /*diz aos itens dentro da segunda lista para irem abaixo do item em que está ou então eles passariam pelos outros elementos*/
+    background:rgba(255, 255, 255, 0.7);
+    position: relative;
+    top: 25px;
+    left: 65px;
+    text-decoration: none;
+    width: 45px;
+    height: 50px;
+ }
+
+
+
+  #navMenu ul ul { /*isso está falando sobre a segunda lista*/
+    position:absolute; /*diz onde estar em relação ao seu pai, se você remover isso atrapalha completamente o posicionamento do menu suspenso*/
+    visibility:hidden; /*diz que a segunda lista deve ser ocultada*/
+    left: -64px;
+    top:32px;/*diz às caixas de listagem onde começar em relação ao topo da caixa de itens da lista, se você alterar isso, certifique-se de alterar a altura do #navMenu ul li a*/
+ }
+
+  #navMenu ul li:hover /*<--- isso está falando quando você passa o mouse sobre o item da lista*/ ul /*<---isso está dizendo para afetar a segunda lista quando você passa o mouse sobre a primeira lista*/{ 
+    visibility:visible; /*diz para ficar visível*/
+    z-index:9999; /*diz para ir abaixo do item da lista*/
+ }
+
+  /**********************************************/
+
+  #navMenu li:hover { /*dizendo para fazer algo ao passar o mouse*/
+   background:rgba(255, 255, 255, 0.7);
+ }
+
+  #navMenu ul li:hover ul li a:hover { /*verifica quando você passa o mouse sobre o primeiro item da lista e o segundo item da lista, ou então, se você não passou o mouse sobre a primeira lista, mas estava passando o mouse sobre ela, a segunda lista mudaria*/
+    color:red;
+ }
+ br {
+    clear:both; /*isso adiciona apenas um pequeno espaço extra entre o final da lista e o topo do conteúdo extra, se isso fosse removido a metade superior da primeira linha estaria na lista quando a lista estivesse visível*/
+ }
+
+  #navmenu ul li { /* isso ajuda a exibi-lo melhor no Internet Explorer*/
+    display: inline;
+
+ }

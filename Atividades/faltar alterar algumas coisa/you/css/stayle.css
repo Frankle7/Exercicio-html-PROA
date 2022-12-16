@@ -1,0 +1,301 @@
+*,*::before, *::after{ /*adicionar conteúdo decorativo à um element*/
+    box-sizing: border-box; /*reset, padrão*/
+    font-family: Roboto, Arial; /*fonte do arquivo*/
+}
+
+header{
+    background-color: #100e12;
+    position: absolute;
+    width: 100%;
+    height: auto; 
+    align-items: center; 
+
+}
+
+
+ #header-t{
+    position: fixed;
+    display: inline-flex;
+    width: 90%;
+    height: 60px;
+    background-color: #141414ef;
+}
+
+.menu-hamburguer, .YouTube, .search, .iconestop4, .iconestop5, .iconestop6, .iconestop7{
+    height: 25px;
+    display:inline-flex;
+    align-items: center; 
+    padding: 15px; 
+    float: inline-start;
+}
+    .barra-pesquisa { width: 100%;
+        display: flex;
+        flex-grow: 1;
+        margin: 6px 80px 0px 240px;}
+
+        .search-input { 
+            width: 100%;
+            height: 40px;
+            font-size: inherit;
+            padding: 1%;
+            border: 1px solid rgb(40, 36, 36);
+            background-color: #000000;
+            color: #25292c;
+            border-right: none;
+            font-weight: bold;
+          }
+          
+          .botton-pesquisa {
+            height: 40px; 
+            width: 14%;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #777;
+            background-color: #232222;
+            border-left: none;
+            
+            
+          }
+          
+          .bt-pesquisa:hover {
+            border: 1px solid rgb(237, 11, 11);}
+
+#menu-hamburguer{
+ margin-left: 5px;
+}
+
+#botton-pesquisa{
+width: 40px;
+}
+    
+#search-microfone{
+margin-left: 230px;
+}
+
+#upload{
+margin-left: 240px;
+}
+    
+#notificação{
+margin-left: 20px;
+}
+
+#entrar{
+margin-left: 10px;
+}
+
+/**---------------------------------------------**/
+
+body{
+    margin: 0;
+    background-color: #111;
+    }
+
+/**---------------------------------------------**/
+
+
+.video-section{
+    display: grid; /*Cria colunas TORNAR O ELEMENTO UM GRID CONTAINER*/
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /*Cria automaticamente um total de colunas que acomode itens com no mínimo 250px de largura. O repeat seria a mesma coisa que escrever 1fr 1fr 1fr. fr é uma unidade fracional.*/
+    gap: 3rem 1rem; /*espaço entre linhas e colunas*/
+    padding: 3rem 0; /*EM usa o tamanho da fonte do elemento pai e REM usa o tamanho da fonte do <html>.*/
+    margin: 0 1.5rem;
+    border: 4px solid rgb(23, 21, 21);
+}
+
+.video-section:first-child{ /*estilos, q representa qualquer elemento que seja o primeiro filho de seus pais.*/
+     border-top: none;
+}
+
+
+.video-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnail{
+    position: relative;
+    display: flex;
+}
+
+.thumbnail::before{
+    content: attr(data-duraction); /*A função attr() do CSS é utilizada para se obter o valor de um determinado atributo do elemento selecionado e usá-lo na folha de estilo.*/
+    position: absolute;
+    background-color: rgba(0, 0, 0, .85);
+    color: white;
+    right: 5px;
+    bottom: 5px;
+    padding: .1em, .3em;
+    border-radius: .3em;
+    font-size: .9em;
+}
+
+.thumbnail-image{
+    width: 100%;
+    height: 100%;
+    min-width: 250px;
+    min-height: 150px;
+    background-color: rgb(39, 36, 36);
+}
+
+.video-bottom-section{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.channel-icon{
+    margin-right: .75rem;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: rgb(29, 27, 27);
+}
+
+.video-detalhes{
+    display: flex;
+    flex-direction: column;
+}
+
+.video-titulo{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.video-channel-nome{
+    margin-bottom: .1rem;
+    text-decoration: none;
+    transition: color 150ms;
+}
+
+.video-channel-nome:hover{
+    color: #111;
+}
+
+.video-channel-nome, .video-metadata{
+    color: #555;
+}
+
+.video-section-title{
+    grid-column: 1 / -1;
+    margin: -.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .5rem;
+/* }
+
+.video-section-title-close{ */
+    border: none;
+    background:none;
+    padding: 0;
+    font-size: 2rem;
+    color: #555;
+    cursor: pointer;
+}
+
+.videos{
+    background-color: #171616;
+}
+
+.menu-h-categorias{
+    padding: 1rem 2rem;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+.categoria-section{
+    display: flex;
+    overflow: hidden;
+}
+
+.categoria{ 
+    margin-left: 1rem;
+    word-wrap: none;
+    white-space: nowrap;
+    border: 1px solid #ccc;
+    border-radius: 900px;
+    background-color: #e7e7e7;
+    padding: .5rem 1rem;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.categoria-houver{
+    background-color: #ddd;
+}
+
+.categoria-active{
+    background-color: #606060;
+    color: white;
+    border-color: #eee;
+}
+
+.categoria:last-child{
+    margin-right: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.barra-pesquisa{
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    margin: 6px 80px 0px 240px;
+}
+
+.search-input{
+    width: 100%;
+    height: 40px;
+    font-size: inherit;
+    padding: 1%;
+    border: 1px solid #777;
+    background-color: #000000;
+    color: #ffffff;
+    border-right: none;
+    font-weight: bold;
+}
+
+.enviar-search{
+    display: flex;
+    align-items: center;
+    padding: 0 1.25rem;
+    border: 1px solid #777;
+    background-color: 777;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+}
+
+.enviar-search:hover{
+    background-color: #f0f0f0;
+}
+
+.menu-icons{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+.menu-profile{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: #aaa;
+}
+
+
+
+

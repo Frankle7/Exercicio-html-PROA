@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://cadastro.com.br/repositorio.jsp" name="cadastro_teste">
+        <fieldset>
+            <legend>Cadastro</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" size="50" maxlength="50" required placeholder="Entre com seu nome">
+               <br>
+               <br> 
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" size="50" maxlength="50"  placeholder="Entre com seu email" required>
+            <br><br>
+            <label form="senha">Senha:</label>
+            <input type="password" name="Senha" id="senha" size="15" maxlength="15"
+            placeholder="Digite sua senha aqui"required>
+            <br><br>
+            <label for="resp">Você utiliza nosso site frequentemente?</label>
+                <input type="radio" name="resp" id="resp" value="sim"> Sim
+                <input type="radio" name="resp" id="resp" value="nao"> Não
+            <br><br>
+
+            <label>Qual browser você usa para acessar nosso site</label>
+                <input type="checkbox" name="opcao1" value="fire"> Firefox
+                <input type="checkbox" name="opcao2" value="chro"> Google Chrome
+                <input type="checkbox" name="opcao3" value="IE"> Microsoft Edge
+                <input type="checkbox" name="opcao4" value="safa"> Safari
+                <input type="checkbox" name="opcao5" value="opera"> Opera
+                <br><br>
+
+                <label>Selecione uma área de formação</label>
+                <select name="opcao" id="opcao">
+                    <option>Marketing</option>
+                    <option>Comercial</option>
+                    <option>Vendas</option>
+                    <option>WEB</option>
+                    <option>Administração</option>
+                </select>
+                <br><br>
+
+                <textarea name="comentario" id="comentario" cols="20" rows="10" placeholder="Comente"></textarea>
+                <br><br>
+                <label>Entre com um numero:</label>
+                <input type="number" min="10" max="20" name="numero" id="numero">
+                <br><br>
+
+                <label>Selecione uma data</label>
+                <input type="date">
+                <br><br>
+                 
+                <meter min="0" max="100" low="40" high="90" optimum="100" value="60"> </meter>
+                <br><br>
+
+                <input type="search" url="#">
+                <br><br>
+
+                <label>Escolha sua cor</label>
+                <input type="color">
+                <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar Campos">
+        </fieldset>
+    </form>
+</body>
+</html>

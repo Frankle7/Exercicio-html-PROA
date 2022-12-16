@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>drop down list</title> <!-- Isto é o que a página dirá na guia bit do seu browser-->
+<link rel="stylesheet" href="../menu drop_down/drop_down.css"> <!-- informa ao html qual arquivo css ler -->
+</head>
+
+<body>
+    
+    <?php if(isset($_SESSION['login']) && $_SESSION['login']) :
+    ?>
+   <a href="logout.php">
+<div id="navMenu"> <!-- o id é como o css identifica a parte da página-->
+<ul> <!-- inicia a lista -->
+<li> <a href="#" class="img-proff"><img src="imagem/perfil-icon.png"></a> <!-- item de lista porque começa com a tag <li> -->
+<ul> <!-- outra lista dentro de um item de lista! lista-cepção!-->
+<li><a href="logout.php" class="sairr">SAIR</a></li> <!-- este é um item de lista para a segunda lista-->
+</ul> <!-- isso termina a segunda lista-->
+</li> <!-- esta é a tag final do item da lista que contém outra lista e não está no final da linha original para mostrar que a segunda lista está dentro dela-->
+<?php endif; ?>
+
+</body>
+</html>
+

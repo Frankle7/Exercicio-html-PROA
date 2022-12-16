@@ -1,0 +1,228 @@
+/* Css reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+
+    padding-top: 30px;
+    font-family: tahoma;
+    color:#FFF;
+    text-align: center;
+}
+
+main{
+    position: relative;
+    width:90%;
+    height: auto;
+    background-color: bisque;
+    margin: auto;
+}
+
+#cabecalho{
+      position: relative;
+      width: 100%;
+      background-color: black;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      height: auto;
+    }
+
+    #nav_principal{
+      background-color: rgb(9, 26, 122);
+      width:100%;
+      position: relative;
+      height: 40px;
+      /* display:flex; /*flexibilizar o componente para alinhar
+      flex-direction: row; 
+      justify-content: space-around;    */
+    }
+
+    #nav_principal a{
+      color:#FFF;
+      text-decoration: none;
+      /* font-weight: bold; */
+      width:16.66%;
+      padding: 1% 0%;  
+      float:left;
+      
+     }
+
+     #nav_principal a:hover{
+      background-color: #FFF;
+      color:blue;
+      transition: 1.5s all;
+     }
+
+     #nav_lateral{
+      position: relative;
+      width: 22%;
+      height: auto;
+      display:flex;
+      flex-direction: column;
+      text-align: left;
+      float: left;
+    
+     }
+
+     #nav_lateral a{
+      color:#FFF;
+      text-decoration: none;
+      border-bottom:1px solid #FFF ;
+      padding:3% 0% 3% 5% ;
+      background-color: darkgrey;
+     }
+
+     #nav_lateral a:hover{
+      background-color: black;
+      border-color: #F00;
+     }
+
+     #meio{
+      position: relative;
+      width:56%;
+      height: 435px;
+      /* background-color: aquamarine; */
+      float:left;
+     }
+
+     #conteudo_meio{
+      position: relative;
+      /* background-color: yellow; */
+      width: 95%;
+      margin: auto; /*centralizar o conteudo no meio*/
+      height: auto;
+     }
+
+     #conteudo_meio h3{
+      color: black;
+      font-weight: 200; /*tirar negrito de h1,2,3...*/
+      padding-top: 10px;
+      font-size: 23px;
+     }
+
+     #conteudo_meio #img_conteudo{
+      position:relative;
+      width: 100%;
+      height: 140px;
+      /* background-color: #000; */
+      margin-top: 10px;
+     }
+   
+     img{
+      width:100%;
+      height:100%;
+     }
+
+     #conteudo_meio p{
+      background-color: aquamarine;
+      width: 98%;
+      margin-top: 10px;
+      color: #000;
+      height: 80px;
+      text-align: justify;
+      padding: 10px 1%;
+     }
+
+     #img_container{
+      position: relative;
+      width: 100%;
+      height: 120px;
+      /* background-color: #F00; */
+      margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+     }
+
+     aside{
+      position: relative;
+      width:22%;
+      height: 435px;
+      background-color: rgb(255, 127, 187);
+      float:left;
+      }
+  
+      aside img{
+      width:100%;
+      height:100%;
+      }
+
+      footer{
+      position: relative;
+      width:100%;
+      background-color: black;
+      height: auto;
+      padding: 20px 0%;
+      clear: left;
+      }
+
+/*      ----------------Layout for smartphone-------------------*/
+                         /* RESPONSIVO*/
+
+@media only screen and (max-width:480px){
+                         
+  #nav_lateral, aside, #img_conteudo, p{
+  display:none;
+  }
+
+  #nav_principal{
+  height:auto;
+  background-color: #FFF;
+  }
+ 
+  #nav_principal a{
+  width:100%;
+  background-color: blue;
+  color:#FFF;
+  display:block;
+  margin-bottom:5px;
+  }
+  
+  #meio{
+  width:100%;
+  }
+                         
+  #img_container{
+  flex-direction:column;
+  }
+                         
+  #img_container div{
+  width:100%;
+  margin-bottom: 5px;
+  height:120px;
+   }
+                         
+}
+
+
+
+/*      ----------------Layout for Tablet-----------------------*/
+                         /* RESPONSIVO*/
+
+@media only screen and (min-width:481px){
+    @media only screen and (max-width:720px)
+  {
+    #nav_lateral, aside{
+    display:none; /* oculta componente, e retira "fisimanente" */
+    }
+                       
+    #meio{
+    width:100%;
+    }
+
+    #nav_principal{
+      height: 63px;
+    }
+
+    #nav_principal a{
+      width: 33.33%;
+      color: rgb(255, 251, 0);
+
+    }
+                       
+  }
+}
